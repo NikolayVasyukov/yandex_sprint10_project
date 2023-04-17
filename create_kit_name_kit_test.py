@@ -24,12 +24,12 @@ def possitive_assert(kits_name):
 
 def negative_assert(kits_name):
     kits_body = get_kits_body(kits_name)
-    kits_response = sender_stand_request.post_new_kits(kits_body)
+    kits_response = sender_stand_request.post_new_kits(kits_body, get_new_user())
 
     assert kits_response.status_code == 400
 
 def negative_assert_no_name(kits_body):
-    kits_response = sender_stand_request.post_new_kits(kits_body)
+    kits_response = sender_stand_request.post_new_kits(kits_body, get_new_user())
 
     assert kits_response.status_code == 400
 
