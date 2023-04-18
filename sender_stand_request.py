@@ -7,7 +7,7 @@ import data
 def post_new_user(body): # Функция создает нового пользователя
     return requests.post(configuration.URL_SERVICE + configuration.CREATE_USER_PATH,
                          json=body,
-                         headers=data.headers_auth)
+                         headers=data.headers_auth_token)
 res = post_new_user(data.user_body)
 print(res.json())
 

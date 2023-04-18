@@ -4,9 +4,6 @@ headers_auth_token = {
     "Authorization": "Bearer {authToken}"
 }
 
-headers_auth = {
-    "Content-Type": "application/json"
-}
 
 kits_body = {
     "name": "Поход"
