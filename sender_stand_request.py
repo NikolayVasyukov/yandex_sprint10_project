@@ -8,6 +8,8 @@ def post_new_user(body): # Функция создает нового польз
     return requests.post(configuration.URL_SERVICE + configuration.CREATE_USER_PATH,
                          json=data.user_body,
                          headers=data.headers_auth)
+res = post_new_user(data.user_body)
+print(res.json())
 
 
 
