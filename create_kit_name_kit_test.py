@@ -79,6 +79,6 @@ def test_create_kit_empty_name_get_success_error_response():
 def test_create_kit_nomber_type_name_get_error_response():
     kits_body = get_kits_body(12)
 
-    response = sender_stand_request.post_new_kits(kits_body)
+    response = sender_stand_request.post_new_kits(kits_body, get_new_user())
     assert response.status_code == 400
 
