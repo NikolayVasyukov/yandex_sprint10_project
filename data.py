@@ -1,7 +1,6 @@
 
 headers_auth_token = {
-    "Content-Type": "application/json",
-    "Authorization": "Bearer {authToken}"
+    "Content-Type": "application/json"
 }
 
 
